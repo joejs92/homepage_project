@@ -1,0 +1,28 @@
+body{
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+}
+
+.section{
+    display: flex;
+    flex-grow: 1; 
+}
+
+#headers{
+    background-color: rgb(181, 181, 230);
+    /* display: flex;
+    flex-grow: 1; */
+}
+
+#mains{
+    background-color: rgb(231, 156, 156);
+    /* display: flex;
+    flex-grow: 2; */
+}
+
+#footers{
+    background-color: rgb(182, 236, 182);
+    /* display: flex;
+    flex-grow: 1; */
+} 
