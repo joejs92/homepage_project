@@ -6,23 +6,63 @@ body{
 
 .section{
     display: flex;
-    flex-grow: 1; 
+    flex-grow: 1;
+    margin-left: 25%;
+    margin-right: 25%;
 }
 
 #headers{
     background-color: rgb(181, 181, 230);
-    /* display: flex;
-    flex-grow: 1; */
 }
 
 #mains{
     background-color: rgb(231, 156, 156);
-    /* display: flex;
-    flex-grow: 2; */
+    display: flex;
+    flex-direction: column;
+}
+
+.section.title{
+    margin-left: 2%;
 }
 
 #footers{
     background-color: rgb(182, 236, 182);
-    /* display: flex;
-    flex-grow: 1; */
-} 
+    display: flex;
+    flex-direction: row;
+}
+
+.image{
+    display: flex;
+    align-items: flex-end;
+}
+
+#profile{
+    background-image: url(./images/spongeProfile.png);
+    color: red;
+}
+
+#contact{
+    background-image: url(./images/spongeGrill.jpeg);
+    width: 100px;
+    height: 100px;
+}
+
+.mainContent{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-left: 2%;
+    padding-right: 1%;
+}
+
+.project{
+    border: 2px solid black;
+    width: 250px;
+    height: 300px;
+    margin: 0px 8px 8px 0px;
+}
+
+#footers .description{
+    display: flex;
+    flex-direction: column;
+}
