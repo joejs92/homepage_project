@@ -15,8 +15,25 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: rgb(181, 181, 230);
+    background-image: url(./images/headerBackground.JPG);
+    background-size: 100% 100%;
+    background-repeat: no-repeat; 
     padding: 2%;
+}
+
+#headers .iconRow{
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 2px;
+}
+
+#headers .iconRow img{
+    margin-left: 8px;
+    margin-right: 8px;
+}
+
+#headers p {
+    line-height: 150%;
 }
 
 #headers .description{
@@ -34,7 +51,7 @@ body{
 }
 
 #mains{
-    background-color: rgb(231, 156, 156);
+    /* background-color: rgb(231, 156, 156); */
     display: flex;
     flex-direction: column;
 }
@@ -44,7 +61,8 @@ body{
 }
 
 #footers{
-    background-color: rgb(182, 236, 182);
+    background-color: rgb(70, 161, 197);
+    color: white;
     display: flex;
     flex-direction: row;
     padding: 3%;
@@ -109,4 +127,13 @@ body{
     display: flex;
     flex-direction: column;
     padding-left: 0%;
+}
+
+#footers p img{
+    filter: invert(100%);
+}
+
+#footers p {
+    margin-top: 8px;
+    margin-bottom: 8px;
 }
