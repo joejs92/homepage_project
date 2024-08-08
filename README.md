@@ -8,3 +8,7 @@ Twitter x
 Open in New x
 Phone x
 Mail envelope x
+
+Project pics x
+Fonts Roboto - Text, Playfair Display - Titles x
+Backgrounds x
