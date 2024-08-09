@@ -12,3 +12,9 @@ Mail envelope x
 Project pics x
 Fonts Roboto - Text, Playfair Display - Titles x
 Backgrounds x
+
+Issues When Adjusting Size
+Text overflow x
+Picture sizes x
+Alignment of Containers x
+Text Size x
