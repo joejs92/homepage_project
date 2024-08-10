@@ -18,3 +18,5 @@ Text overflow x
 Picture sizes x
 Alignment of Containers x
 Text Size x
+
+For the tablet sized stuff, try translating the elements into their correct positions.

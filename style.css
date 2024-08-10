@@ -7,7 +7,7 @@ body{
     display: flex;
     height: 100vh; 
     flex-direction: column;
-    background-color: antiquewhite;
+    background-color: lightgray;
 }
 
 h1 , h2{
@@ -33,6 +33,11 @@ p{
     background-size: 100% 100%;
     background-repeat: no-repeat; 
     padding: 2%;
+}
+
+.filler{
+    height: 0px;
+    width: 0px;
 }
 
 #headers .iconRow{
@@ -122,8 +127,6 @@ p{
     background-image: url(./images/spongeProfile.png);
     background-size: 450px 400px;
     color: salmon;
-    /* background-size: contain;
-    background-repeat: no-repeat; */
     width: 450px;
     height: 400px;
 }
@@ -187,6 +190,9 @@ p{
         height: 350px;
         background-size: 394px 350px;
     }
+    #profile p{
+        font-size: 32px;
+    }
 }
 
 @media (max-width: 1330px){
@@ -195,18 +201,43 @@ p{
         height: 300px;
         background-size: 338px 300px;
     }
+    #profile p{
+        font-size: 28px;
+    }
 }
-
+/*This section below is considered the 'tablet' size.*/
 @media (max-width: 1200px){
+    h1 , h2{
+        font-size: 30px;
+    }
+    
+    p{
+        font-size: 14px ;
+    }
     .section{
         margin-left: 0%;
         margin-right: 0%;
     }
-    #profile{
-        width: 450px;
-        height: 400px;
-        background-size: 450px 400px;
+    .filler{
+        height: 250px;
+        width: 250px;
+        float: left;
     }
+    #headers .description{
+        text-wrap: wrap;
+        transform: translate(-25%)
+    }
+    #profile{
+        width: 250px;
+        height: 300px;
+        background-size: 250px 300px;
+        z-index: 1;
+        transform: translate(50%,-15%)
+    }
+    #profile p{
+        font-size: 16px;
+        transform: translate(100%,-1100%)
+    } 
 }
 
 @media (max-width: 700px){
@@ -214,20 +245,37 @@ p{
         margin-left: 0%;
         margin-right: 0%;
     }
-    #profile{
-        width: 338px;
-        height: 300px;
-        background-size: 338px 300px;
+    .filler{
+        height: 150px;
+        width: 100px;
+        float: left;
     }
+    #headers .description{
+        text-wrap: wrap;
+        height: 200px;
+        width: 300px;
+        transform: translate(-25%,5%);
+    }
+    #profile{
+        width: 150px;
+        height: 200px;
+        background-size: 150px 200px;
+        z-index: 1;
+        transform: translate(15%,-10%);
+    }
+    #profile p{
+        font-size: 12px;
+        transform: translate(100%,-1000%);
+    } 
     h1 , h2{
-        font-size: 28px;
+        font-size: 24px;
     }
     
     p{
-        font-size: 14px ;
+        font-size: 12px ;
     }
 }
-
+/*This section below is considered the 'mobile' size.*/
 @media (max-width: 540px){
     .section{
         margin-left: 0%;
@@ -239,6 +287,11 @@ p{
     
     p{
         font-size: 16px ;
+    }
+    .filler{
+        height: 0px;
+        width: 0px;
+        float: left;
     }
     .section.title{
         display: flex;
@@ -253,7 +306,12 @@ p{
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        margin: 4px;
     }
+     #headers .description{
+        transform: translate(0%,0%);
+        width: 450px;
+    } 
     #footers{
         flex-direction: column;
     }
@@ -261,5 +319,16 @@ p{
         height: 400px;
         width: 450px;
         margin-top: 16px;
+    }
+    #profile{
+        width: 450px;
+        height: 400px;
+        background-size: 450px 400px;
+        z-index: 0;
+        transform: translate(0%,0%);
+    }
+    #profile p{
+        font-size: 40px;
+        transform: translate(0%,0%);
     }
 }
